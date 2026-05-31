@@ -86,8 +86,16 @@
             <h2>Our Menu</h2>
             <p>"Fresh flavors, great taste—every bite delights!" "Fresh flavors, great taste—every bite delights!"</p>
         </div>
+
+        <div class="filter-buttons">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('salads')">Salads</button>
+            <button onclick="filterMenu('bowls')">Bowls</button>
+            <button onclick="filterMenu('specials')">Specials</button>
+        </div>
+
         <div class="Menu-container">
-            <div class="Menu-box">
+            <div class="Menu-box" data-category="salads">
                 <div class="Menu-img">
                     <img src="shop1.jpg" alt="shop1">
                    
@@ -100,7 +108,7 @@
                 
                 
             </div>
-            <div class="Menu-box">
+            <div class="Menu-box" data-category="salads">
                 <div class="Menu-img">
                     <img src="shop2.jpg" alt="shop1">
                 </div>
@@ -110,7 +118,7 @@
                
                 
             </div>
-            <div class="Menu-box">
+            <div class="Menu-box" data-category="bowls">
                 <div class="Menu-img">
                     <img src="shop3.jpg" alt="shop1">
                    
@@ -121,7 +129,7 @@
                 <i class='bx bxs-cart-add'></i>
                 
             </div>
-            <div class="Menu-box">
+            <div class="Menu-box" data-category="specials">
                 <div class="Menu-img">
                     <img src="shop4.jpg" alt="shop1">
                    
