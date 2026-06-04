@@ -6,8 +6,9 @@ window.addEventListener('scroll', () => {
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    document.querySelector(".newsletter button").addEventListener("click", function() {
-        let email = document.querySelector(".newsletter input").value;
+    document.querySelector(".footer-newsletter button").addEventListener("click", function() {
+        let email = document.querySelector(".footer-newsletter input").value;
+
         if(email) {
             alert("Thank you for subscribing!");
         } else {
